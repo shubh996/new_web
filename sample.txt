@@ -1,0 +1,7 @@
+NOTIFICATION PAGE : 
+
+h_tag = launch
+h_title = Welcome
+h_image = image
+h_about = we have launched our website. stay tuned for further updates, we will keep you posted.
+
