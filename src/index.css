@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+
+@font-face {
+  font-family: "UberMoveBold";
+  src: local("UberMoveBold"),
+    url("./assets/UberMoveBold.otf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UberMoveMedium";
+  src: local("UberMoveMedium"),
+    url("./assets/UberMoveMedium.otf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UberMoveLight";
+  src: local("UberMoveLight"),
+    url("./assets/UberMoveLight.otf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UberMoveRegular";
+  src: local("UberMoveRegular"),
+    url("./assets/UberMoveRegular.otf") format("truetype");
+  font-weight: normal;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"UberMoveMedium" ;
+}
+
+.containerPage{
+  scroll-snap-type:y mandatory;
+  overflow-y : scroll;
+  height: 100vh;
+}
+
+.onePage {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.twoPage {
+  scroll-snap-align: start;
+  height: 200vh;
+  background-color: #fff;
+  display: flex;
+  
+}
+
+.threePage {
+  scroll-snap-align: start;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  
+}
+
+.fourPage {
+  scroll-snap-align: start;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  
+}
+
+
+.cardDotted {
+  padding:15px;
+  border-radius: 6px;
+  border:solid 0.75px #000;
+  
+  margin:-15px;
+  margin-top: 15px;
+  
+}
+
+.cardDottedFullPageProduct {
+  border-radius: 6px;
+  
+}
+
+.cardDottedProduct {
+  padding:5px;
+  border:solid 0.5px #000;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom:-15px;
+}
+
+.cardDottedProductLoading {
+  padding:5px;
+  border-radius: 6px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+.name_style {
+  color: #000;
+  font-size:26;
+  font-family:"sans-serif-medium";
+  font-weight:bolder;
+  width:"88%";
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tab-list {
+  border: 0.4px solid #CD6155;
+  padding-left: 0;
+   margin-left:20px;margin-right:20px;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  
+  color:#CD6155;
+  border-left: 0.5px solid #CD6155;
+  width:33%;text-align: center;font-family: sans-serif;
+ font-size: 16;
+
+}
+
+.tab-list-active {
+  background-color:#CD6155;
+  border: solid #CD6155;
+  color:#fff;
+  border-width: 1px 1px 0 1px;
+}
+
+
+.tab-list1 {
+  border: 0.4px solid #CD6155;
+  padding-left: 0;
+   position:"fixed"
+}
+
+.tab-list-item1 {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  color:#CD6155;
+  border-left: 0.5px solid #CD6155;
+  padding: 0.5rem 0.75rem;position:"fixed";
+ 
+}
+
+.tab-list-active1 {
+  background-color:#CD6155;
+  border: solid #CD6155;
+  color:#fff;
+  border-width: 1px 1px 0 1px;position:"fixed"
+}
+
+.footer0 {
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #000;
+  justify-content: center;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+.footer1 {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color:  #fff;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 0.4px solid #000;
+    height: 70px;
+}
+
+.footer2 {
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #fff;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.footer3 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  background-color:  #fff;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-bottom: 0.4px solid #000;
+  height: 70px;
+  display: flex;
+}
+
+.footer4 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:  #000;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-bottom: 0.4px solid #000;
+  height: 60px;
+  display: flex;
+  margin-left: -32px;
+}
+
+.footer5 {
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 25px;
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  align-self:center;
+ 
+  padding-top: 5px;
+  margin-left: -30px;
+  
+}
+
+.footer25 {
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 25px;
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  align-self:center;
+ 
+  padding-top: 5px;
+  margin-left: -32px;
+  
+}
+
+
+
+
+.main-header {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),url("https://images.unsplash.com/photo-1639690305422-77b7e3d36a69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100vh;  /* responsive height */
+    overflow: scroll; overflow-x:hidden;
+  
+
+}
+
+h1.logo {
+  text-indent: -9999px;
+  height:115px;
+  margin-top: 10%;
+}
+
+html, body { height:100%; height:100% }
+body { height:5000px; background-color:#F7F7F7; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.6em }
+.page { background:#A2A2A2; width:200px; height:600px; overflow-y:scroll; position:fixed }
+.content { background-color:#4D4D4D; padding:10px; color:#B7B7B7; }
